@@ -9,3 +9,4 @@ Scrum Supervisor, Nathan W;
 
 Plan: 3D Pong w/ angling, abilities?
 python via visual studio code
+
