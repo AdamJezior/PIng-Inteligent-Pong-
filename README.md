@@ -32,6 +32,8 @@ Make UI interactive,                     (not started)
 Sprint 2 (create functions + make features)
 Sprint backlog tasks:
 
+jira (not started)
+
 
 (task complete)
 (partially complete)
