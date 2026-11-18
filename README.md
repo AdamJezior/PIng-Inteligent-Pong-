@@ -32,6 +32,7 @@ Create a score system,                 (partially complete)
 Sprint 2 (create functions + make features)
 Sprint backlog tasks:
 
+jira (not started)
 
 (task complete)
 (partially complete)
