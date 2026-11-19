@@ -33,6 +33,7 @@ Sprint 2 (create functions + make features)
 Sprint backlog tasks:
 
 jira (not started)
+<img width="1056" height="543" alt="image" src="https://github.com/user-attachments/assets/c626b281-9aae-40c6-9019-12f8eb3fa8a4" />
 
 
 (task complete)
