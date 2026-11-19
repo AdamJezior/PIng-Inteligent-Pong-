@@ -27,7 +27,7 @@ Make UI interactive,                     (not started)
 	Implement into main game UI,           (not started) 
 
 		Person 4; (floater) Ryan
-	Create a score system,                 (not started)
+	Create a score system,                 (task complete)
 
 Sprint 2 (create functions + make features)
 Sprint backlog tasks:
