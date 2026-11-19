@@ -52,3 +52,4 @@ while True:
     if scan == "3":
         print("Closing program")
         exit()
+
