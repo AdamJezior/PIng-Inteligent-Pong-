@@ -38,15 +38,16 @@ def settings():
     lbl.pack(pady=5)
     btn = tk.Button(root,text = "Enter player names",fg = "black", command=player_names)
     btn.pack(pady=5)
-
     btn = tk.Button(root,text ="Enter player colors",fg = "black", command=Start)
     btn.pack(pady=5)
-    btn = tk.Button(root,text ="Enter score limit",fg = "black", command=Start)
+    btn = tk.Button(root,text ="Enter score limit",fg = "black", command=score_limit)
     btn.pack(pady=5)
-    btn = tk.Button(root,text ="Enter game speed",fg = "black", command=Start)
+    btn = tk.Button(root,text ="Enter game speed",fg = "black", command=ball_speed)
     btn.pack(pady=5)
-    btn = tk.Button(root,text ="Returning to main menu...",fg = "black", command=main_menu)
+    btn = tk.Button(root,text ="Back to main menu",fg = "black", command=main_menu)
     btn.pack(pady=5)
+    if(tk.Button(root,text ="Back to main menu",fg = "black", command=main_menu)==True):
+        root.destroy()
 
 # button widget with red color text
 # inside
@@ -55,13 +56,12 @@ def main_menu():
     lbl.grid(column=0, row=0)
     btn = tk.Button(root, text = "1. Start Game" ,fg = "red", command=Start)
     btn.grid(column=0, row=1)
-
     btn = tk.Button(root, text = "2. Settings" ,fg = "red", command=settings)
     btn.grid(column=0, row=2)
-
     btn = tk.Button(root, text = "3. Exit Game" ,fg = "red", command=exit)
 # set Button grid
     btn.grid(column=0, row=3)
+    
 
 def player_names():
     global player_name1
@@ -87,6 +87,7 @@ def player_names():
 
     btn = tk.Button(root, text="Submit", command=dispPlayerNames)
     btn.pack(pady=5)
+    root.destroy()
 
 def dispPlayerNames():
     root = tk.Tk()
@@ -98,6 +99,42 @@ def dispPlayerNames():
     btn.pack(pady=5)
     btn = tk.Button(root, text="Cancel", command=player_names)
     btn.pack(pady=5)
+    root.destroy()
 
+def score_limit():
+    root = tk.Tk()
+    root.title("Score Limit")
+    root.geometry('350x200')
+    lbl = tk.Label(root, text="Enter score limit:")
+    lbl.pack(pady=5)
+    score_entry = tk.Entry(root)
+    score_entry.pack(pady=5)
+
+    def set_score_limit():
+        global score_limit
+        score_limit = int(score_entry.get())
+        root.destroy()
+        settings()
+    btn = tk.Button(root, text="Submit", command=set_score_limit)
+    btn.pack(pady=5)
+
+
+def ball_speed():
+    global speed_entry
+    root = tk.Tk()
+    root.title("Ball Speed")
+    root.geometry('350x200')
+    lbl = tk.Label(root, text="Enter ball speed:")
+    lbl.pack(pady=5)
+    speed_entry = tk.Entry(root)
+    speed_entry.pack(pady=5)
+
+    def set_ball_speed():
+        global ball_speed
+        ball_speed = int(speed_entry.get())
+        root.destroy()
+        settings()
+    btn = tk.Button(root, text="Submit", command=set_ball_speed)
+    btn.pack(pady=5)
 main_menu()
 root.mainloop()
