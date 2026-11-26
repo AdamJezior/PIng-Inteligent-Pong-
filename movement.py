@@ -1,25 +1,25 @@
-def player1_up():
-    y = player.ycor()
+def paddle1_up():
+    y = paddle1.ycor()
     if y<250:
-        player.sety(y+20)
+        paddle1.sety(y+20)
 
-def player1_down():
-    y= player.ycor()
+def paddle1_down():
+    y= paddle1.ycor()
     if y>-250:
-        player.sety(y-20)
+        paddle1.sety(y-20)
 
-def player2_up():
-    y = player.ycor()
+def paddle2_up():
+    y = paddle2.ycor()
     if y<250:
-        player.sety(y+20)
+        paddle2.sety(y+20)
 
-def player2_down():
-    y= player.ycor()
+def paddle2_down():
+    y= paddle2.ycor()
     if y>-250:
-        player.sety(y-20)
+        paddle2.sety(y-20)
 
 window.listen()
-window.onkeypress(move_up,"w")
-window.onkeypress(move_down,"s")
-window.onkeypress(move_up,"Up")
-window.onkeypress(move_down,"Down")
+window.onkeypress(paddle1_up,"w")
+window.onkeypress(paddle1_down,"s")
+window.onkeypress(paddle2_up,"Up")
+window.onkeypress(paddle2_down,"Down")

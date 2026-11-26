@@ -15,16 +15,17 @@ Sprint 1 (learn Python basics + start coding)
 Sprint backlog tasks:
 		Person 1: Adam J
 Create a simple UI for the main menu,    (task complete)
-Update UI to include some graphics,    (partially complete)
+Update UI to include some graphics,    (task complete)
 Make UI interactive,                     (task complete)
 	
 		Person 2: Adam M
-Create main game UI;                   (not started)
+Create main game UI;                   (partially complete)
 Create pause menu,	                   (not started)
+ball physics						   (not started)
 
 		Person 3: Nathan W
-Create some simple object movement,    (not started)
-Implement into main game UI,           (not started) 
+Create some simple object movement,    (task complete)
+Implement into main game UI,           (partially complete) 
 
 		Person 4; (floater) Ryan
 Create a score system,                 (partially complete)
